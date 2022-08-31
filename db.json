@@ -1,0 +1,57 @@
+{
+  "days": [
+    {
+      "id": 1,
+      "day": 1
+    },
+    {
+      "id": 2,
+      "day": 2
+    },
+    {
+      "id": 3,
+      "day": 3
+    },
+    {
+      "day": 4,
+      "id": 4
+    }
+  ],
+  "voca": [
+    {
+      "day": 2,
+      "eng": "lion",
+      "kor": "사자",
+      "isDone": true,
+      "id": 1
+    },
+    {
+      "day": 2,
+      "eng": "tiger",
+      "kor": "호랑이",
+      "isDone": false,
+      "id": 2
+    },
+    {
+      "day": 3,
+      "eng": "rabbit",
+      "kor": "토끼",
+      "isDone": true,
+      "id": 3
+    },
+    {
+      "day": 4,
+      "eng": "dog",
+      "kor": "강아지",
+      "isDone": true,
+      "id": 4
+    },
+    {
+      "day": 5,
+      "eng": "cat",
+      "kor": "고양이",
+      "isDone": false,
+      "id": 4
+    }
+  ]
+}
