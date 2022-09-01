@@ -6,7 +6,7 @@ export default function Days() {
   const [days, setDays] = useState([]);
   // state가 변경될때마다 감지를 해서 실행을 한다.
   useEffect(() => {
-    axios.get("http://127.0.0.1:8099/days").then((res) => {
+    axios.get("https://keonwoo.herokuapp.com/days").then((res) => {
       setDays(res.data);
     });
   }, []);
