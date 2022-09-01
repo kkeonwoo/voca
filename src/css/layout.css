@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;300;400;500;700?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;300;400;500;700&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
 * {
   font-family: "Noto Sans KR", "Josefin", serif;
   margin: 0;
@@ -226,4 +226,11 @@ a {
   left: 50%;
   transform: translateX(-50%);
   bottom: 15px;
+}
+
+@media all and (max-width: 1200px) {
+  .container {
+    width: 100%;
+    padding: 0 20px;
+  }
 }

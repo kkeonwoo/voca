@@ -1,6 +1,6 @@
 @import "vars";
 @import "mixin";
-@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;300;400;500;700?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;300;400;500;700&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
 
 * {
   font-family: "Noto Sans KR", "Josefin", serif;
@@ -224,4 +224,11 @@ a {
   position: absolute;
   @include absCenter(true, false);
   bottom: 15px;
+}
+
+@media all and (max-width: 1200px) {
+  .container {
+    width: 100%;
+    padding: 0 20px;
+  }
 }

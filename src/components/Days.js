@@ -4,12 +4,13 @@ import { Link } from "react-router-dom";
 
 export default function Days() {
   const [days, setDays] = useState([]);
-  // state가 변경될때마다 감지를 해서 실행한다.
+  // state가 변경될때마다 감지를 해서 실행을 한다.
   useEffect(() => {
-    axios.get("http://127.0.0.1:5000/days").then((res) => {
+    axios.get("http://127.0.0.1:8099/days").then((res) => {
       setDays(res.data);
     });
   }, []);
+
   return (
     <>
       <div className="container">
