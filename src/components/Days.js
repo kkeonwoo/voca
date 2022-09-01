@@ -4,13 +4,12 @@ import { Link } from "react-router-dom";
 
 export default function Days() {
   const [days, setDays] = useState([]);
-  // state가 변경될때마다 감지를 해서 실행을 한다.
+  // state가 변경될때마다 감지를 해서 실행한다.
   useEffect(() => {
     axios.get("https://keonwoo.herokuapp.com/days").then((res) => {
       setDays(res.data);
     });
   }, []);
-
   return (
     <>
       <div className="container">
