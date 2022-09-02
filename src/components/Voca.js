@@ -13,7 +13,7 @@ export default function Voca(props) {
     // axios.put()            update
     // axios.delete()         delete
     axios
-      .put(`https://keonwoo.herokuapp.com/voca/${props.id}`, {
+      .put(`http://127.0.0.1:8099/voca/${props.id}`, {
         // eng: props.eng,
         // kor: props.kor,
         // id: props.id,
@@ -35,7 +35,7 @@ export default function Voca(props) {
   const deleteVoca = () => {
     if (window.confirm("다외웠나요?")) {
       // console.log("delete");
-      axios.delete(`https://keonwoo.herokuapp.com/voca/${props.id}`).then((res) => {
+      axios.delete(`http://127.0.0.1:8099/voca/${props.id}`).then((res) => {
         if (res.data.delete === "ok") {
           // db에서 값을 지웠다는 결과를 받았기 때문에
           setInfo({ id: -1 }); // -1을 세팅하고
